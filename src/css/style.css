@@ -38,6 +38,7 @@
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
+    font-size: 20px;
 }
 
 .btn-square {
@@ -212,8 +213,8 @@
 .icon {
     padding: 15px;
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: flex-start;
+    justify-content: start; */
     background: #FFFFFF !important;
     border-radius: 50px;
     border: 1px dashed var(--primary) !important;
@@ -246,7 +247,7 @@
     transition: .5s;
 }
 
-.cat-item:hover div {
+.cat-item:hover div {    
     background: var(--primary);
     border-color: transparent;
 }

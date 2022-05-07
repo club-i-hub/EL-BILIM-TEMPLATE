@@ -15,7 +15,7 @@
   display: block;
   padding: $nav-link-padding-y $nav-link-padding-x;
   @include font-size($nav-link-font-size);
-  font-weight: $nav-link-font-weight;
+  font-weight: $headings-font-weight;
   color: $nav-link-color;
   text-decoration: if($link-decoration == none, null, none);
   @include transition($nav-link-transition);
