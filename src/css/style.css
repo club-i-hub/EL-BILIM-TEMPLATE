@@ -3,7 +3,7 @@
     --primary: #00B98E;
     --secondary: #FF6922;
     --light: #EFFDF5;
-    --dark: #0E2E50;
+    --dark: #1266a1;
 }
 
 .back-to-top {
@@ -38,6 +38,7 @@
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
+    font-size: 18px;
 }
 
 .btn-square {
@@ -105,6 +106,7 @@
     padding: 25px 0;
     color: #FFFFFF;
     font-size: 15px;
+    font-weight: 900 !important;
     text-transform: uppercase;
     outline: none;
 }
@@ -437,4 +439,21 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.logo-text {
+    margin-left: 10px;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.logo-hunter {
+    color: var(--dark) !important
+}
+
+.cat-item-active {
+    background-color: var(--primary) !important;
+    color: var(--light);
+} .cat-item-active h6 {
+    color: var(--light);
 }
