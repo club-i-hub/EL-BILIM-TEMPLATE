@@ -29,7 +29,8 @@
     $(document).ready(function() {
         $('.burger').click(function() {
             $(this).toggleClass('burger_active');
-            $('.navbar-collapse').toggleClass('navbar-collapse_active')
+            $('.navbar-collapse').toggleClass('navbar-collapse-active')
+            $('.margin-position').toggleClass('margin-position-active').html('<h1 class="logo-text mb-0 text-primary">edu<span class="logo-hunter">hunter</span></h1>')
         });
     })
     
