@@ -24,6 +24,14 @@
             $('.nav-bar').removeClass('sticky-top');
         }
     });
+
+    // Navbar 
+    $(document).ready(function() {
+        $('.burger').click(function() {
+            $(this).toggleClass('burger_active');
+            $('.navbar-collapse').toggleClass('navbar-collapse_active')
+        });
+    })
     
     
     // Back to top button
