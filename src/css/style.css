@@ -3,7 +3,7 @@
     --primary: #00B98E;
     --secondary: #FF6922;
     --light: #EFFDF5;
-    --dark: #0E2E50;
+    --dark: #1266a1;
 }
 
 .back-to-top {
@@ -35,10 +35,17 @@
     transition: .5s;
 }
 
+.btn-bg {
+    background-color: #1266a1;
+    border: none;
+    padding: 7px 0;
+}
+
+
 .btn.btn-primary,
 .btn.btn-secondary {
     color: #FFFFFF;
-    font-size: 20px;
+    margin: 3px 15px 0 0;
 }
 
 .btn-square {
@@ -103,9 +110,9 @@
 
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
-    padding: 25px 0;
-    color: #FFFFFF;
+    padding-top: 15px;
     font-size: 15px;
+    font-weight: 900 !important;
     text-transform: uppercase;
     outline: none;
 }
@@ -115,15 +122,58 @@
     color: var(--primary);
 }
 
-@media (max-width: 991.98px) {
-    .nav-bar {
-        margin: 0;
-        padding: 0;
+@media (max-width: 1299px) {
+    .navbar-collapse {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100vh;
+        padding: 20px 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: 0.6s all;
     }
-
+    .navbar-collapse_active {
+        left: 0;
+      }
+    .burger {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+    }
+    .burger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #0E2E50;
+        margin-bottom: 5px;
+        transition: 0.5s all;
+    }
+    .burger span:nth-child(3) {
+        margin-bottom: 0;
+    }
+    .burger_active span {
+        margin-bottom: -3px;
+    }
+    .burger_active span:nth-child(1) {
+        transform: translateY(3px) rotate(-45deg);
+    }
+    .burger_active span:nth-child(2) {
+        display: none;
+    }
+      .burger_active span:nth-child(3) {
+        transform: translateY(3px) rotate(45deg);
+    }
     .navbar-light .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
+        display: flex;
+        position: relative;
     }
 
     .navbar-light .navbar-nav {
@@ -438,4 +488,21 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+.logo-text {
+    margin-left: 10px;
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.logo-hunter {
+    color: var(--dark) !important
+}
+
+.cat-item-active {
+    background-color: var(--primary) !important;
+    color: var(--light);
+} .cat-item-active h6 {
+    color: var(--light);
 }
